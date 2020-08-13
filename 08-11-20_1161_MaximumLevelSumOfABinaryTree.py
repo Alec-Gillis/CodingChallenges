@@ -1,3 +1,15 @@
+"""
+This solution uses BFS and a queue to retrieve the sum of each level in a Binary Tree. I have not done a 
+coding challenge since October 2019, so it took a minute to jump back in. Stared at the screen completely
+lost for awhile before I got on a roll. Pretty happy with how this first one turned out!
+
+Stats:
+Time: ~23 minutes
+Runtime: 296 ms, faster than 99.72% of Python3 online submissions for Maximum Level Sum of a Binary Tree.
+Memory Usage: 18 MB, less than 55.29% of Python3 online submissions for Maximum Level Sum of a Binary Tree.
+"""
+
+
 # Definition for a binary tree node.
 class TreeNode:
      def __init__(self, val=0, left=None, right=None):
@@ -5,9 +17,6 @@ class TreeNode:
          self.left = left
          self.right = right
 
-"""
-This solution uses BFS and a queue to retrieve the sum of each level in a Binary Tree
-"""
 class Solution:
     def maxLevelSum(self, root: TreeNode) -> int:
         #initialize values
